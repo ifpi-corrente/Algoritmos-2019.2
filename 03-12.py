@@ -5,4 +5,5 @@ velocidade = float(input("Digite a velocidade em Km/h: "))
 tempo_em_minutos = (distancia / velocidade) * 60
 horas = int(tempo_em_minutos // 60)
 minutos = int(tempo_em_minutos % 60)
-print(f"O tempo estimado da viagem é {horas} horas e {minutos} minutos")
+segundos = int((tempo_em_minutos % 1) * 60 )
+print(f"O tempo estimado da viagem é {horas} horas e {minutos} minutos e {segundos} segundos")
