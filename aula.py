@@ -1,23 +1,6 @@
-dia = int(input("Digite o dia: "))
-mes = int(input("Digite o mês: "))
-ano = int(input("Digite o ano: "))
-
-if (dia > 0 and dia < 32):
-    validadedia = True
-else:
-    validadedia = False
-
-if (mes > 0 and mes < 13):
-    validademes = True
-else:
-    validademes = False
-    
-if (ano> 1000 and ano < 9999):
-    validadeano = True
-else:
-    validadeano = False
-    
-if (validadedia == True and validademes == True and validadeano == True):
-    print("Data válida!!")
-else:
-    print("Data inválida!")
+horainicial= int(input("Digite a hora inicial do jogo: "))
+minutoinicial = int(input("Digite o minuto inicial do jogo: "))
+horafinal = int(input("Digite a hora final do jogo: "))
+minutofinal = int(input("Digite o minuto final do jogo: "))
+print(f'O jogo começou {horainicial}:{minutoinicial} h e terminou {horafinal}:{minutofinal}' )
+print('O jogo teve a duração de 2 Hora(s) e 2 Minuto(s)')

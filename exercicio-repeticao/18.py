@@ -8,6 +8,7 @@ maior = 0
 soma = 0
 while i < n:
     x = float(input("Digite um número: "))
+    
     if i == 0:
         menor = x
         maior = x
