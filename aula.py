@@ -1,6 +1,4 @@
-horainicial= int(input("Digite a hora inicial do jogo: "))
-minutoinicial = int(input("Digite o minuto inicial do jogo: "))
-horafinal = int(input("Digite a hora final do jogo: "))
-minutofinal = int(input("Digite o minuto final do jogo: "))
-print(f'O jogo começou {horainicial}:{minutoinicial} h e terminou {horafinal}:{minutofinal}' )
-print('O jogo teve a duração de 2 Hora(s) e 2 Minuto(s)')
+l = [5, 9, 13]
+
+for x,e in enumerate(l):
+    print(f'{x} {e}')
