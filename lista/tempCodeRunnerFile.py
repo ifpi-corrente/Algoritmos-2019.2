@@ -21,9 +21,22 @@ while len(nome) != 0 :
             soma = soma + distancia
         media = soma/5
         resultados.append(media)       
-print(atletas)
-print(saltos)
-print(resultados)
+
+vezes = len(atletas)
+
+x = 0
+for i in range(vezes):
+    
+    print(f'Atleta: {atletas[i]}')
+    for j in range(5):
+        print(f'Salto: {saltos[x]}')
+        x = x + 1 
+    
+    
+
+#print(atletas)
+#print(saltos)
+#print(resultados)
             
     				
     

@@ -8,6 +8,7 @@ nome = 'ifpi'
 atletas=[]
 saltos=[]
 resultados=[]
+ordem = ['primeiro', 'segundo', 'terceiro', 'quarto', 'quinto']
 
 while len(nome) != 0 :
     nome=(input("Digite o nome do atleta: "))
@@ -16,7 +17,7 @@ while len(nome) != 0 :
         soma = 0
         media = 0
         for i in range (5):
-            distancia = float(input('Digite o salto: '))
+            distancia = float(input(f'{ordem[i]} salto: '))
             saltos.append(distancia)
             soma = soma + distancia
         media = soma/5
@@ -28,9 +29,12 @@ x = 0
 for i in range(vezes):
     
     print(f'Atleta: {atletas[i]}')
+    print(f'Saltos: ',end="")
     for j in range(5):
-        print(f'Salto: {saltos[x]}')
-        x = x + 1 
+        print(f'{saltos[x]} - ', end="")
+        x = x + 1
+    print("")
+    print(f'Média dos saltos: {resultados[i]}m')
     
     
 
